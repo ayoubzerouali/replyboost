@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "boostonx",
+    "version": "0.1",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "old/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.twitter.com/*",
+                "*://*.x.com/*"
+            ],
+            "js": [
+                "preact/dist/content.js"
+            ],
+            "css": [
+                "old/style.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "16": "sunflower.png"
+    }
+}
