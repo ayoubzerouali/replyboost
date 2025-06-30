@@ -1,5 +1,8 @@
  .post-tree {
      padding: 0;
+     height: 60vh;
+     overflow-y: scroll;
+     scrollbar-width: none;
  }
 
  .post-item {
@@ -170,3 +173,4 @@
          left: -24px;
          width: 16px;
      }
+ }

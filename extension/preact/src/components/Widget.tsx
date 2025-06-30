@@ -1,8 +1,6 @@
-// import { h } from 'preact';
 import { useState } from 'preact/hooks';
-import { TimelineExample } from './TimeLine';
-// import '../widget.css'; // this will be in your Shadow DOM context
-// 💬
+import { Timeline } from './TimeLine';
+
 export default function Widget() {
     const [open, setOpen] = useState(false);
 
@@ -18,21 +16,21 @@ export default function Widget() {
                     <div className="rb-sheet">
                         <div className="rb-header">
                             <h2 className="rb-title">Reply Assistant</h2>
-                            <button className="rb-close" onClick={() => setOpen(false)}>✕</button>
+                            <button className="rb-close" onClick={() => setOpen(false)}>
+                                ✕
+                            </button>
                         </div>
                         <div className="rb-container rb-my-2">
                             <textarea className="rb-textarea" placeholder="Type your reply..." />
                             <button className="rb-send">Enhance Reply</button>
                         </div>
                         <div className="rb-container">
-                            <TimelineExample />
+                            <Timeline />
                         </div>
                     </div>
 
                 </>
             )}
         </>
-        // <div classNameName={"rb-fab"} id="hamidachouri">
-        // </div>
     );
 }

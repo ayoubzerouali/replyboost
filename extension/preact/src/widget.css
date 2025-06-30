@@ -38,8 +38,6 @@
     padding: 2rem;
     box-sizing: border-box;
     border-radius: 1rem 0 0 1rem;
-    overflow-y: scroll;
-    scrollbar-width: none;
 }
 
 @media(max-width:920px) {
