@@ -3,8 +3,7 @@ import Widget from './components/Widget';
 import widgetCSS from './widget.css?inline'; // forces raw string import
 import timelineCSS from './timeline.css?inline'; // forces raw string import
 import { setupTweetRetrieval } from './utils/tweetRetrieval';
-//
-//
+
 setupTweetRetrieval();
 
 if (document.readyState === 'loading') {

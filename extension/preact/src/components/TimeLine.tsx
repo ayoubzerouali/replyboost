@@ -109,7 +109,7 @@ export function Timeline() {
                             <Post
                                 username={reply.author}
                                 key={index}
-                                text={reply.isReply}
+                                text={reply.text}
                                 // isMainPost
                                 isReply={reply.isReply}
                             />
@@ -117,7 +117,7 @@ export function Timeline() {
                     } else {
                         return (
                             <div key={index}>
-                                <Post isReply={reply.isReply} text={reply.isReply} username={reply.author} />
+                                <Post isReply={reply.isReply} text={reply.text} username={reply.author} />
 
                                 {/* <span style={{ fontWeight: 'bold', color: '#1d9bf0' }}> */}
                                 {/*     {reply.author} */}
